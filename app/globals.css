@@ -4,14 +4,17 @@
 
 :root{
     --background-color-primary:#ffffff;
-    --text-color-primary:#000000;
+    --text-color-primary:#2c2c2c;
     --background-color-secondary:#171c28;
     --text-color-secondary:#afafbf;
 }
 body{
     background-color: var(--background-color-primary);
-    padding:10px;
+    transition:1s ease-in;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color:var(--text-color-primary);
+    padding:10px 5%;
 
 }
 .navbar
@@ -21,6 +24,8 @@ body{
     width:100%;
     padding:10px;
     justify-content: space-between;
+    
+    
 
 }
 .navbar-heading
@@ -32,4 +37,81 @@ body{
     display:flex;
     justify-content: space-between;
     width:30%;
+    font-size:1.2rem;
+    align-items: center;
+}
+.navbar-action-btns
+{
+    display:flex;
+    gap:20px;
+    
+    justify-content: flex-end;
+}
+.highlight
+{
+    font-weight: 800;
+}
+
+/* jumbotron styling */
+.jumbotron
+{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    width:100%;
+}
+.jumbotron-content
+{
+    display:flex;
+    width:40%;
+    flex-direction: column;
+
+}
+.jumbotron-content>p{
+    font-size:2rem;
+}
+.main-btn
+{
+    padding:10px;
+    border:var(--text-color-primary) solid 1px;
+    border-radius: 10px;
+    width:110px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.main-btn:hover
+{
+    background-color: var(--text-color-primary);
+    color:white;
+}
+
+/* category component styling */
+.category-container
+{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+}
+.category
+{
+    background-color:inherit;
+    border:1px solid var(--text-color-primary);
+    border-radius: 10px;
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:15%;
+    align-items: center;
+}
+.category-heading
+{
+    font-size:1.4rem;
+    margin-top:10px;
+}
+.category-image:hover{
+    width:150px;
+    height: 150px;
 }
