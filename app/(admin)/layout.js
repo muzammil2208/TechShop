@@ -1,25 +1,24 @@
 import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from './components/Navbar'
+import '../globals.css'
 import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'TechShop',
+  title: 'TechShop admin page',
   description: 'Created by Muzammil Khan',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <Head>
+     <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
           <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
       </Head>
-      <Navbar/>
+      <body className={inter.className}>
+      <h1> thsi is navbar for admin page</h1>
       {children}</body>
     </html>
   )

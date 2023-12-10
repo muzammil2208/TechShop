@@ -7,6 +7,7 @@
     --text-color-primary:#2c2c2c;
     --background-color-secondary:#171c28;
     --text-color-secondary:#afafbf;
+    height: 100vh;
 }
 body{
     background-color: var(--background-color-primary);
@@ -15,6 +16,7 @@ body{
     font-weight: 400;
     color:var(--text-color-primary);
     padding:10px 5%;
+    height: 100%;
 
 }
 .navbar
@@ -114,4 +116,54 @@ body{
 .category-image:hover{
     width:150px;
     height: 150px;
+}
+
+
+/* form styling */
+.form-container
+{
+    display:flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+.form-heading
+{
+    display: flex;
+    align-items: center;
+    font-size:2rem;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    width:40%;
+    justify-content: flex-start;
+
+}
+.form-label
+{
+    margin-bottom: 10px;
+    margin-top:10px;
+    font-size:1.2rem;
+}
+.form-input
+{
+    border:1px solid rgb(81, 81, 81);
+    border-radius: 5px;
+    padding:10px 10px;
+}
+.submit-btn
+{
+    background-color:var(--text-color-primary);
+    color:white;
+    border-radius: 5px;
+    padding:10px;
+    margin-top:20px;
+
+}
+.submit-btn:hover{
+    background-color: black;
+    
 }

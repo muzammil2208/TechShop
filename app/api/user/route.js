@@ -1,5 +1,5 @@
 import connectMongo from "@/libs/mongodb";
-import {Product} from "@/models/products";
+import { users } from "@/models/users";
 import { NextResponse } from "next/server";
 
 

@@ -5,7 +5,7 @@ import { nanoid } from "nanoid";
 const ProductSchema = new Schema(
     {
         id:{
-            requred:true,
+            required:true,
             type:String,
             default: () => nanoid(7),
             index: { unique: true },
@@ -20,4 +20,4 @@ const ProductSchema = new Schema(
     }
 )
 const Product=mongoose.models.Product||mongoose.model("Product",ProductSchema)
-export default Product;
+export  {Product,ProductSchema};
