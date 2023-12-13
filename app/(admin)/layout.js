@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import '../globals.css'
 import Head from 'next/head'
+import AdminNavbar from '../components/AdminNavbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,8 +19,13 @@ export default function RootLayout({ children }) {
           <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
       </Head>
       <body className={inter.className}>
-      <h1> thsi is navbar for admin page</h1>
-      {children}</body>
+      <div className="admin-container">
+        <AdminNavbar/>
+        <div className="admin-view-container">
+        {children}
+        </div>
+      </div>
+      </body>
     </html>
   )
 }

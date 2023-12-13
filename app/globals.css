@@ -15,7 +15,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     color:var(--text-color-primary);
-    padding:10px 5%;
+    
     height: 100%;
 
 }
@@ -166,4 +166,89 @@ form{
 .submit-btn:hover{
     background-color: black;
     
+}
+
+/* admin console styling */
+.admin-container
+{
+    display:flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+.admin-console-navbar
+{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--text-color-primary);
+    color:white;
+    height: 100%;
+    padding-top:10px;
+    width:20%;
+}
+.admin-navbar-links
+{
+    margin-bottom: 10px;
+    padding:10px 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size:1.5rem;
+    display:flex;
+    gap:10px;
+}
+.admin-view-container
+{
+    padding:10px;
+    width:80%;
+}
+.active
+{
+    background-color: white;
+    color:var(--text-color-primary);
+}
+
+.information-block
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    background-color: var(--text-color-primary);
+    color:white;
+    margin-bottom: 10px;
+    width:10rem;
+    height: 10rem;
+    border-radius: 10px;
+
+}
+
+.information-block-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    gap:10px;
+
+}
+
+table.products_table tr td
+{
+    @apply border-2 border-blue-200
+}
+thead
+{
+    @apply bg-blue-400
+}
+td button
+{
+    @apply bg-blue-900 rounded-lg text-white flex p-1
+}
+td
+{
+    @apply p-1
+}
+.edit-button
+{
+    @apply flex bg-blue-900 text-white rounded-lg w-[70px] justify-center p-1
 }
